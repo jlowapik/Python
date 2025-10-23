@@ -72,7 +72,6 @@ class ElectricCar(Car):
         return distance * 0.2
 
     def calculate_cost(self, distance: int, price_per_unit: float) -> float:
-        """Перевизначає метод, щоб рахувати витрати електрики"""
         return self.battery_usage(distance) * price_per_unit
 
     def info(self) -> str:
