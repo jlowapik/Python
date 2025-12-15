@@ -50,7 +50,7 @@ class MultiThread:
             print(f'server off')
         
         finally:
-            self.server_socket.close
+            self.server_socket.close()
 
 server = MultiThread(port=9000)
 server.start()
